@@ -9591,6 +9591,10 @@ table {
   }
 }
 
+.landing-nri__description-container .btn {
+  width: 430px;
+}
+
 .landing-awards {
   width: 100%;
   background-color: #F4EAD7;

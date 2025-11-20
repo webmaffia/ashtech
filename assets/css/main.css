@@ -8804,15 +8804,20 @@ table {
   }
 }
 @media (max-width: 479px) {
+  .landing-banner {
+    height: 160.6280193237vw;
+  }
   .landing-banner__content {
     padding: 4.8309178744vw 3.8647342995vw;
   }
   .landing-banner__title {
     font-size: 7.729468599vw;
     transform: translate(-50%, calc(-50% + 50px));
+    width: 100%;
   }
   .landing-banner__scroll {
-    display: none;
+    font-size: 4.347826087vw;
+    bottom: 13.0434782609vw;
   }
 }
 .landing-banner__svg {
@@ -8834,6 +8839,11 @@ table {
   stroke-width: 1.5;
   transition: stroke-dashoffset 0.3s ease-out;
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+}
+@media (max-width: 479px) {
+  .landing-banner__svg {
+    opacity: 0;
+  }
 }
 
 .landing-overview {
@@ -8973,12 +8983,16 @@ table {
   }
 }
 @media (max-width: 479px) {
+  .landing-overview {
+    padding: 200vw 0 0 0;
+  }
   .landing-overview__interaction {
     height: 217.3913043478vw;
     padding: 9.6618357488vw 3.8647342995vw;
   }
   .landing-overview__content {
     gap: 7.2463768116vw;
+    max-width: 100%;
   }
   .landing-overview__header {
     gap: 4.8309178744vw;
@@ -9231,6 +9245,9 @@ table {
   .landing-values__container {
     gap: 7.2463768116vw;
   }
+  .landing-values__header {
+    max-width: 100%;
+  }
   .landing-values__label {
     font-size: 3.8647342995vw;
   }
@@ -9396,13 +9413,16 @@ table {
 @media (max-width: 479px) {
   .landing-projects {
     min-height: 148.309178744vw;
-    padding: 9.6618357488vw 3.8647342995vw;
+    padding: 9.6618357488vw 3.8647342995vw 0;
+    flex-direction: column-reverse;
   }
   .landing-projects__content {
     gap: 7.2463768116vw;
+    max-width: 100%;
   }
   .landing-projects__header {
     gap: 4.8309178744vw;
+    max-width: 100%;
   }
   .landing-projects__label {
     font-size: 3.8647342995vw;
@@ -9412,16 +9432,26 @@ table {
   }
   .landing-projects__description {
     font-size: 3.3816425121vw;
+    max-width: 100%;
   }
   .landing-projects__buttons {
     width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    margin-bottom: 9.6618357488vw;
+  }
+  .landing-projects__buttons .btn {
+    width: 50%;
+    height: 12.5603864734vw;
+    font-size: 3.3816425121vw;
   }
   .landing-projects__background {
     opacity: 0.3;
     bottom: 0;
+    top: 0;
     left: -120.7729468599vw;
     width: 289.8550724638vw;
-    height: 144.9275362319vw;
+    height: 100%;
   }
 }
 
@@ -9437,8 +9467,9 @@ table {
   .building {
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    max-width: 72.4637681159vw;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
   }
 }
 
@@ -9623,6 +9654,7 @@ table {
 @media (max-width: 479px) {
   .landing-nri {
     min-height: 190.8212560386vw;
+    flex-direction: column-reverse;
   }
   .landing-nri__image {
     height: 79.1859903382vw;
@@ -9632,6 +9664,7 @@ table {
   }
   .landing-nri__header {
     gap: 4.8309178744vw;
+    max-width: 100%;
   }
   .landing-nri__label {
     font-size: 3.8647342995vw;
@@ -9643,6 +9676,13 @@ table {
   }
   .landing-nri__description-container {
     gap: 6.038647343vw;
+    max-width: 100%;
+  }
+  .landing-nri__description-container .btn {
+    width: 65% !important;
+    margin: 0 auto;
+    font-size: 3.3816425121vw !important;
+    margin-bottom: 9.6618357488vw !important;
   }
   .landing-nri__description {
     font-size: 3.3816425121vw;
@@ -9835,6 +9875,7 @@ table {
   }
   .landing-awards__header {
     gap: 7.2463768116vw;
+    max-width: 100%;
   }
   .landing-awards__label {
     font-size: 3.8647342995vw;
@@ -9844,13 +9885,14 @@ table {
   }
   .landing-awards__description {
     font-size: 3.3816425121vw;
+    max-width: 100%;
   }
   .landing-awards__grid {
-    gap: 7.2463768116vw;
-    flex-direction: column;
+    gap: 4.8309178744vw;
+    flex-direction: row;
   }
   .landing-awards__item-images {
-    width: 43.4782608696vw;
+    width: 40.3381642512vw;
     height: 21.7391304348vw;
   }
   .landing-awards__laurel {
@@ -10169,6 +10211,7 @@ table {
   .landing-testimonials__header {
     gap: 7.2463768116vw;
     margin-bottom: 7.2463768116vw;
+    max-width: 100%;
   }
   .landing-testimonials__label {
     font-size: 3.8647342995vw;
@@ -10461,6 +10504,10 @@ table {
 
 .w-400 {
   font-weight: 400;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

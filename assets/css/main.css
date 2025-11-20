@@ -887,7 +887,7 @@ table {
   background-color: #f2f2f2;
 }
 .btn:hover::before {
-  width: 0.3125vw;
+  width: 100%;
 }
 .btn:focus {
   outline: 0.1041666667vw solid #720C10;
@@ -927,14 +927,25 @@ table {
 }
 
 .btn--primary {
-  background-color: #720C10;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #0C0D0D;
 }
 .btn--primary::before {
-  background-color: #E0BD75;
+  background-color: #720C10;
+}
+
+.btn--primary:hover span, .btn--primary:hover svg {
+  position: relative;
+  z-index: 1;
+}
+.btn--primary:hover svg {
+  filter: invert(1);
 }
 .btn--primary:hover {
-  background-color: #5a0a0d;
+  color: #FFFFFF;
+}
+.btn--primary:hover .btn--primary::before {
+  width: 100% !important;
 }
 
 .btn--secondary {
@@ -942,9 +953,19 @@ table {
   border: 2px solid #720C10;
   color: #720C10;
 }
+
+.btn--secondary:hover span, .btn--secondary:hover svg {
+  position: relative;
+  z-index: 1;
+}
+.btn--secondary:hover svg {
+  filter: invert(1);
+}
 .btn--secondary:hover {
-  background-color: #720C10;
   color: #FFFFFF;
+}
+.btn--secondary:hover .btn--primary::before {
+  width: 100% !important;
 }
 
 .btn--brochure {
@@ -9646,7 +9667,8 @@ table {
 }
 
 .landing-nri__description-container .btn {
-  width: 22.3958333333vw;
+  width: 19.5833333333vw;
+  font-size: 1.1458333333vw;
 }
 
 .landing-awards {

@@ -33,7 +33,7 @@
     background-color: #f2f2f2; // Slightly darker white
     
     &::before {
-      width: vw(6);
+      width: 100%;
     }
   }
 
@@ -77,15 +77,27 @@
 
 // Button variants
 .btn--primary {
-  background-color: $color-brand-primary;
-  color: $color-white;
+  background-color: #fff;
+  color: $color-brand-black;
 
   &::before {
-    background-color: $color-brand-gold;
+    background-color: $color-brand-primary;
   }
 
-  &:hover {
-    background-color: #5a0a0d; // Darker shade of brand primary
+ 
+}
+
+.btn--primary:hover {
+  span,svg{
+    position: relative;
+    z-index: 1;
+  }
+  svg{
+   filter: invert(1);
+  }
+  color: $color-white;
+  .btn--primary::before{
+    width: 100% !important;
   }
 }
 
@@ -94,12 +106,21 @@
   border: 2px solid $color-brand-primary;
   color: $color-brand-primary;
 
-  &:hover {
-    background-color: $color-brand-primary;
-    color: $color-white;
+  
+}
+.btn--secondary:hover {
+  span,svg{
+    position: relative;
+    z-index: 1;
+  }
+  svg{
+   filter: invert(1);
+  }
+  color: $color-white;
+  .btn--primary::before{
+    width: 100% !important;
   }
 }
-
 // Download brochure button (specific)
 .btn--brochure {
   gap: vw(14.5);

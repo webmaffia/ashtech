@@ -9714,6 +9714,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.0416666667vw;
 }
 .landing-awards__item-images {

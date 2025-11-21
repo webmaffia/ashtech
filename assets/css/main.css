@@ -8814,6 +8814,7 @@ table {
     font-size: 7.729468599vw;
     transform: translate(-50%, calc(-50% + 50px));
     width: 100%;
+    top: 70%;
   }
   .landing-banner__scroll {
     font-size: 4.347826087vw;
@@ -8840,9 +8841,16 @@ table {
   transition: stroke-dashoffset 0.3s ease-out;
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
 }
-@media (max-width: 479px) {
-  .landing-banner__svg {
-    opacity: 0;
+.landing-banner__svg.mobile-svg {
+  display: none;
+}
+@media (max-width: 767px) {
+  .landing-banner__svg:not(.mobile-svg) {
+    display: none !important;
+  }
+  .landing-banner__svg.mobile-svg {
+    display: block !important;
+    opacity: 1;
   }
 }
 
@@ -8984,7 +8992,7 @@ table {
 }
 @media (max-width: 479px) {
   .landing-overview {
-    padding: 200vw 0 0 0;
+    padding: 275vw 0 0 0;
   }
   .landing-overview__interaction {
     height: 217.3913043478vw;
@@ -10459,7 +10467,7 @@ table {
     max-width: 100%;
   }
   .landing-footer__bottom {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
   }
 }

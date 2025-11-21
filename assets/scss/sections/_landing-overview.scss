@@ -163,7 +163,7 @@
   }
 
   @include respond-to('mobile') {
-    padding: 200vw 0 0 0;
+    padding: 275vw 0 0 0;
     &__interaction {
       height: vw(900, 414);
       padding: vw(40, 414) vw(16, 414);

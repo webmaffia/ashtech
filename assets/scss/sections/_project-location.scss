@@ -1,0 +1,223 @@
+// Project Location Section
+.project-location {
+  position: relative;
+  background: $color-bg-primary;
+  padding: vw(100) $container-padding-desktop vw(50);
+
+  &__decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: vw(960);
+    height: vw(502);
+    background-image: url('https://www.figma.com/api/mcp/asset/72c5548e-4180-4f92-88e7-15d27178fd9e');
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    opacity: 0.8;
+  }
+
+  &__container {
+    position: relative;
+    max-width: vw(1720);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: vw(70);
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: vw(70);
+    align-items: center;
+  }
+
+  &__header-left {
+    display: flex;
+    flex-direction: column;
+    gap: vw(35);
+  }
+
+  &__label {
+    font-family: $font-secondary;
+    font-size: vw(18);
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-medium;
+    color: $color-brand-primary;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: vw(58);
+    line-height: $line-height-tight;
+    color: $color-brand-black;
+    font-weight: $font-weight-regular;
+  }
+
+  &__header-right {
+    display: flex;
+    flex-direction: column;
+    gap: vw(50);
+  }
+
+  &__description {
+    font-family: $font-secondary;
+    font-size: vw(20);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-relaxed;
+    color: $color-brand-black;
+  }
+
+  &__map {
+    width: 100%;
+    height: vw(500);
+    border-radius: vw(8);
+    overflow: hidden;
+    position: relative;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__connectivity {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: vw(30);
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: vw(18);
+    flex: 0 0 auto;
+    max-width: vw(245);
+  }
+
+  &__item-icon {
+    width: vw(42);
+    height: vw(42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-text {
+    font-family: $font-secondary;
+    font-size: vw(20);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-medium;
+    color: $color-body;
+    margin: 0;
+  }
+
+  // Tablet styles
+  @media (max-width: 1024px) {
+    padding: vw(80) vw(40) vw(40);
+
+    &__container {
+      gap: vw(50);
+    }
+
+    &__header {
+      grid-template-columns: 1fr;
+      gap: vw(50);
+    }
+
+    &__title {
+      font-size: vw(42);
+    }
+
+    &__description {
+      font-size: vw(18);
+    }
+
+    &__map {
+      height: vw(400);
+    }
+
+    &__connectivity {
+      justify-content: flex-start;
+      gap: vw(40);
+    }
+
+    &__item {
+      flex-basis: calc(33.333% - #{vw(27)});
+    }
+
+    &__item-text {
+      font-size: vw(18);
+    }
+  }
+
+  // Mobile styles
+  @media (max-width: 768px) {
+    padding: vw(60, 414) vw(20, 414) vw(30, 414);
+
+    &__decoration {
+      width: 100%;
+      height: vw(300, 414);
+    }
+
+    &__container {
+      gap: vw(40, 414);
+    }
+
+    &__header-left {
+      gap: vw(25, 414);
+    }
+
+    &__label {
+      font-size: vw(16, 414);
+    }
+
+    &__title {
+      font-size: vw(32, 414);
+    }
+
+    &__description {
+      font-size: vw(16, 414);
+    }
+
+    &__map {
+      height: vw(300, 414);
+    }
+
+    &__connectivity {
+      gap: vw(30, 414);
+    }
+
+    &__item {
+      flex-basis: calc(50% - #{vw(15, 414)});
+      max-width: none;
+    }
+
+    &__item-icon {
+      width: vw(32, 414);
+      height: vw(32, 414);
+    }
+
+    &__item-text {
+      font-size: vw(16, 414);
+    }
+  }
+}

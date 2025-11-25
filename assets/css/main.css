@@ -4486,6 +4486,12 @@ table {
     padding-top: 0;
   }
 }
+@media (max-width: 479px) {
+  .specifications__card-wrapper:nth-child(2) {
+    padding-top: 37.4396135266vw;
+    margin-bottom: 7.2463768116vw;
+  }
+}
 .specifications__card-wrapper:nth-child(3) {
   padding-top: 20.8333333333vw;
 }

@@ -4087,6 +4087,9 @@ table {
     width: 4.8309178744vw;
     height: 4.8309178744vw;
   }
+  .experiences__tab-icon > img {
+    display: none;
+  }
 }
 .experiences__tab-icon img {
   width: 100%;

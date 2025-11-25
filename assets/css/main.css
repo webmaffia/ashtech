@@ -315,7 +315,7 @@ table {
 }
 
 .header {
-  position: relative;
+  position: absolute !important;
   width: 100%;
 }
 
@@ -3364,6 +3364,9 @@ table {
   }
 }
 @media (max-width: 768px) {
+  .project-submenu__logo {
+    height: 9.6618357488vw;
+  }
   .project-submenu {
     padding: 3.6231884058vw 0;
   }
@@ -3405,7 +3408,6 @@ table {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.6458333333vw;
   align-items: start;
 }
 .project-overview__left {
@@ -3445,7 +3447,7 @@ table {
   color: #0C0D0D;
 }
 .project-overview__description p {
-  margin-bottom: 1.0416666667vw;
+  margin-bottom: 0.5208333333vw;
 }
 .project-overview__description p:last-child {
   margin-bottom: 0;
@@ -3508,6 +3510,9 @@ table {
   }
 }
 @media (max-width: 768px) {
+  .project-overview__button {
+    margin: 1.0416666667vw auto;
+  }
   .project-overview {
     padding: 14.4927536232vw 4.8309178744vw;
   }
@@ -3601,7 +3606,7 @@ table {
 .project-architecture__description {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.0416666667vw;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #FFFFFF;
   max-width: 54.6875vw;
@@ -3786,8 +3791,8 @@ table {
   .project-architecture__tab {
     font-size: 2.8985507246vw;
     flex: 1;
-    min-width: calc(50% - 1.2077294686vw);
     text-align: center;
+    min-width: 15.7004830918vw;
   }
   .project-architecture__progress {
     height: 0.7246376812vw;
@@ -3810,7 +3815,7 @@ table {
 }
 @media (max-width: 767px) {
   .experiences {
-    padding: 2.6041666667vw 16px;
+    padding: 14.4927536232vw 4.8309178744vw;
     gap: 2.0833333333vw;
   }
 }
@@ -3831,7 +3836,8 @@ table {
 }
 @media (max-width: 767px) {
   .experiences__decoration {
-    display: none;
+    height: 72.4637681159vw !important;
+    width: 100% !important;
   }
 }
 .experiences__decoration img {
@@ -3881,7 +3887,7 @@ table {
 }
 @media (max-width: 767px) {
   .experiences__label {
-    font-size: 0.8333333333vw;
+    font-size: 3.8647342995vw;
   }
 }
 
@@ -3936,7 +3942,8 @@ table {
     gap: 1.5625vw;
   }
   .experiences__header-right .btn {
-    width: 100%;
+    width: 53.1400966184vw;
+    margin: 4.8309178744vw auto;
   }
 }
 
@@ -3954,7 +3961,7 @@ table {
 }
 @media (max-width: 767px) {
   .experiences__description {
-    font-size: 0.8333333333vw;
+    font-size: 3.8647342995vw;
   }
 }
 
@@ -3975,10 +3982,24 @@ table {
   flex-direction: column;
   width: 33.4895833333vw;
   flex-shrink: 0;
+  position: relative;
 }
 @media (max-width: 1023px) {
   .experiences__tab-list {
     width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .experiences__tab-list {
+    position: relative;
+  }
+  .experiences__tab-list--open {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(114, 12, 16, 0.2);
+    border-radius: 0.9661835749vw;
+    box-shadow: 0 0.9661835749vw 2.8985507246vw rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
   }
 }
 
@@ -4000,11 +4021,15 @@ table {
   height: 4.375vw;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  position: relative;
 }
 .experiences__tab-button:hover {
   background-color: rgba(114, 12, 16, 0.05);
 }
 .experiences__tab-button--active {
+  background-color: #720C10;
+}
+.experiences__tab-button--active:hover {
   background-color: #720C10;
 }
 .experiences__tab-button--active .experiences__tab-text {
@@ -4022,7 +4047,32 @@ table {
 @media (max-width: 479px) {
   .experiences__tab-button {
     height: 14.4927536232vw;
-    padding: 3.6231884058vw 2.8985507246vw;
+    padding: 3.6231884058vw 9.6618357488vw 3.6231884058vw 2.8985507246vw;
+  }
+  .experiences__tab-button:not(.experiences__tab-button--active) {
+    display: none;
+  }
+  .experiences__tab-list--open .experiences__tab-button {
+    display: flex;
+  }
+  .experiences__tab-button.experiences__tab-button--active {
+    position: relative;
+  }
+  .experiences__tab-button.experiences__tab-button--active::after {
+    content: "";
+    position: absolute;
+    right: 2.8985507246vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 1.2077294686vw solid transparent;
+    border-right: 1.2077294686vw solid transparent;
+    border-top: 1.4492753623vw solid #FFFFFF;
+    transition: transform 0.3s ease-in-out;
+  }
+  .experiences__tab-list--open .experiences__tab-button.experiences__tab-button--active::after {
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 
@@ -4090,7 +4140,7 @@ table {
 }
 @media (max-width: 767px) {
   .experiences__tab-content {
-    padding: 1.5625vw 0.8333333333vw;
+    padding: 7.2463768116vw 0;
     gap: 1.5625vw;
   }
 }
@@ -4105,7 +4155,10 @@ table {
 }
 @media (max-width: 767px) {
   .experiences__features {
-    row-gap: 4.8309178744vw;
+    gap: 4.8309178744vw;
+  }
+  .experiences__features .feature-card {
+    max-width: 30.193236715vw;
   }
 }
 
@@ -4312,7 +4365,7 @@ table {
 }
 @media (max-width: 767px) {
   .specifications {
-    padding: 1.5625vw 16px 2.6041666667vw;
+    padding: 4.8309178744vw;
   }
 }
 
@@ -4339,7 +4392,7 @@ table {
 }
 @media (max-width: 767px) {
   .specifications__label {
-    font-size: 0.8333333333vw;
+    font-size: 3.8647342995vw;
   }
 }
 
@@ -4367,6 +4420,7 @@ table {
 @media (max-width: 767px) {
   .specifications__title {
     font-size: 1.875vw;
+    max-width: 100%;
   }
 }
 @media (max-width: 479px) {
@@ -4410,6 +4464,12 @@ table {
     padding-top: 0;
   }
 }
+@media (max-width: 479px) {
+  .specifications__card-wrapper:nth-child(1) {
+    padding-top: 37.4396135266vw;
+    margin-bottom: 7.2463768116vw;
+  }
+}
 .specifications__card-wrapper:nth-child(2) {
   padding-top: 14.5833333333vw;
 }
@@ -4429,6 +4489,14 @@ table {
 @media (max-width: 767px) {
   .specifications__card-wrapper {
     gap: 1.5625vw;
+  }
+}
+@media (max-width: 479px) {
+  .specifications__card-wrapper {
+    max-width: 100%;
+  }
+  .specifications__card-wrapper .spec-card__content {
+    margin-top: 2.4154589372vw;
   }
 }
 
@@ -4531,7 +4599,8 @@ table {
     font-size: 3.8647342995vw;
   }
   .project-about .btn {
-    width: 100%;
+    width: 45% !important;
+    margin: 0 auto;
   }
 }
 

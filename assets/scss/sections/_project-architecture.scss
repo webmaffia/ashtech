@@ -61,7 +61,7 @@
   &__description {
     font-family: $font-secondary;
     font-size: vw(20);
-    font-weight: $font-weight-medium;
+    font-weight:400;
     line-height: $line-height-medium;
     color: $color-white;
     max-width: vw(1050);
@@ -284,8 +284,9 @@
     &__tab {
       font-size: vw(12, 414);
       flex: 1;
-      min-width: calc(50% - #{vw(5, 414)});
+ 
       text-align: center;
+      min-width: vw(65, 414);
     }
 
     &__progress {

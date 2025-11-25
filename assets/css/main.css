@@ -3390,6 +3390,7 @@ table {
   position: relative;
   background: #F4EAD7;
   padding: 6.25vw 100px;
+  height: 40.15625vw;
 }
 .project-overview__decoration {
   position: absolute;
@@ -3511,6 +3512,9 @@ table {
   }
 }
 @media (max-width: 768px) {
+  .project-overview {
+    height: auto;
+  }
   .project-overview__button {
     margin: 1.0416666667vw auto;
   }

@@ -3193,7 +3193,7 @@ table {
   position: relative;
   width: 100%;
   height: 41.6666666667vw;
-  background-image: url("https://www.figma.com/api/mcp/asset/5e160ef2-cd85-45ef-92db-1ddff6d55e43");
+  background-image: url("../images/landing/banner-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -3267,11 +3267,12 @@ table {
 }
 @media (max-width: 768px) {
   .project-hero {
-    height: 120.7729468599vw;
+    height: 160.6280193237vw;
     padding: 7.2463768116vw 4.8309178744vw 9.6618357488vw;
   }
   .project-hero__content {
     gap: 7.2463768116vw;
+    max-width: 100%;
   }
   .project-hero__title {
     font-size: 8.6956521739vw;

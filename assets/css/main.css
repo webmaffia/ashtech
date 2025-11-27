@@ -3189,6 +3189,10 @@ table {
   font-weight: 400;
 }
 
+.nribg {
+  background-image: url("../images/nri/banner.png") !important;
+}
+
 .project-hero {
   position: relative;
   width: 100%;
@@ -4615,6 +4619,1161 @@ table {
     width: 45% !important;
     margin: 0 auto;
   }
+}
+
+.nri-overview {
+  position: relative;
+  background: #F4EAD7;
+  padding: 6.25vw 5.2083333333vw;
+  min-height: 30.2083333333vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 3.6458333333vw;
+}
+.nri-overview__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/nri/nri-overview-decoration.png");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.nri-overview__container {
+  position: relative;
+  display: flex;
+  gap: 3.6458333333vw;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 2;
+}
+.nri-overview__left {
+  flex: 0 0 35.2083333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+}
+.nri-overview__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+}
+.nri-overview__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720C10;
+  text-transform: uppercase;
+}
+.nri-overview__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-overview__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  max-width: 50.7291666667vw;
+}
+.nri-overview__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0C0D0D;
+  margin: 0;
+}
+.nri-overview__button {
+  margin-top: 0.5208333333vw;
+}
+
+.nri-architecture {
+  position: relative;
+  min-height: 46.875vw;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/nri/nri-architecture-bg.jpg");
+  overflow: hidden;
+}
+.nri-architecture__background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/nri/nri-architecture-layer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.nri-architecture__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 123.71%);
+  z-index: 1;
+}
+.nri-architecture__container {
+  position: relative;
+  padding: 2.6041666667vw 5.2083333333vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  align-items: center;
+}
+.nri-architecture__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  align-items: center;
+  text-align: center;
+  padding: 1.5625vw 1.5625vw 1.5625vw 0;
+  max-width: 100%;
+}
+.nri-architecture__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.nri-architecture__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.75vw;
+  line-height: 1.2;
+  color: #FFFFFF;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-architecture__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #FFFFFF;
+  margin: 0;
+}
+.nri-architecture__features {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125vw;
+  width: 100%;
+  max-width: 77.8645833333vw;
+}
+.nri-architecture__feature-row {
+  display: flex;
+  gap: 4.1666666667vw;
+  align-items: flex-start;
+}
+.nri-architecture__feature-item {
+  flex: 1;
+  display: flex;
+  gap: 1.0416666667vw;
+  align-items: flex-start;
+  max-width: 23.1770833333vw;
+}
+.nri-architecture__feature-icon {
+  width: 1.7708333333vw;
+  height: 1.40625vw;
+  flex-shrink: 0;
+  margin-top: 0.2604166667vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nri-architecture__feature-icon img,
+.nri-architecture__feature-icon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.nri-architecture__feature-icon svg {
+  flex-shrink: 0;
+}
+.nri-architecture__feature-text {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #FFFFFF;
+  font-weight: 325;
+  margin: 0;
+  flex: 1;
+}
+.nri-architecture__footer-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 54.6875vw;
+  margin: 0;
+}
+
+.nri-why-choose {
+  position: relative;
+  background: #F4EAD7;
+  padding: 4.53125vw 4.6875vw;
+}
+.nri-why-choose__container {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5.2083333333vw;
+}
+.nri-why-choose__header {
+  display: flex;
+  gap: 8.8020833333vw;
+  align-items: flex-start;
+  height: 9.1145833333vw;
+}
+.nri-why-choose__header-left {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  align-items: flex-start;
+  min-width: 0;
+}
+.nri-why-choose__header-right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  max-width: 50.7291666667vw;
+}
+.nri-why-choose__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720c10;
+  width: 20.0520833333vw;
+  text-align: center;
+}
+.nri-why-choose__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-why-choose__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0C0D0D;
+  margin: 0;
+}
+.nri-why-choose__button {
+  position: relative;
+  background: #FFFFFF;
+  border: none;
+  padding: 1.5625vw;
+  display: flex;
+  gap: 0.7552083333vw;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.nri-why-choose__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625vw;
+  height: 4.0104166667vw;
+  background: #720c10;
+}
+.nri-why-choose__button span {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #0C0D0D;
+  font-weight: 325;
+  text-align: center;
+}
+.nri-why-choose__button-icon {
+  width: 0.8102083333vw;
+  height: 0.8102083333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: rotate(315deg);
+}
+.nri-why-choose__button-icon svg {
+  width: 0.5729166667vw;
+  height: 0.5729166667vw;
+  display: block;
+}
+.nri-why-choose__items {
+  display: flex;
+  gap: 2.0833333333vw;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 90vw;
+}
+.nri-why-choose__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1.3020833333vw 0 0;
+  position: relative;
+  flex: 0 0 auto;
+}
+.nri-why-choose__item--first .nri-why-choose__item-content {
+  padding: 1.5625vw 0;
+  margin-right: -1.3020833333vw;
+  display: flex;
+  gap: 0.5208333333vw;
+  align-items: center;
+}
+.nri-why-choose__item--others {
+  align-items: flex-start;
+  justify-content: center;
+}
+.nri-why-choose__item--others .nri-why-choose__item-content {
+  padding: 1.5625vw 0 0 0;
+  margin-right: -1.3020833333vw;
+  display: flex;
+  gap: 0.5208333333vw;
+  align-items: flex-start;
+}
+.nri-why-choose__item-number {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 5.2083333333vw;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: normal;
+  color: #0C0D0D;
+  opacity: 0.4;
+  flex-shrink: 0;
+  margin-right: -1.3020833333vw;
+  color: #F4EAD7;
+  text-shadow: -1px -1px 0 #E0BD75, 1px -1px 0 #E0BD75, -1px 1px 0 #E0BD75, 1px 1px 0 #E0BD75;
+}
+.nri-why-choose__item-content {
+  flex: 1;
+}
+.nri-why-choose__item-text {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #4e4c49;
+  font-weight: 325;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.nri-why-choose__item--first .nri-why-choose__item-text {
+  width: 9.9696875vw;
+}
+.nri-why-choose__item--others:nth-of-type(2) .nri-why-choose__item-text, .nri-why-choose__item--others:nth-of-type(3) .nri-why-choose__item-text, .nri-why-choose__item--others:nth-of-type(4) .nri-why-choose__item-text {
+  width: 11.3659375vw;
+}
+.nri-why-choose__item--others:nth-of-type(5) .nri-why-choose__item-text {
+  width: 13.7625520833vw;
+}
+
+.nri-benefits {
+  position: relative;
+  background: #F4EAD7;
+  padding: 5.2083333333vw 0;
+}
+.nri-benefits__container {
+  max-width: 86.0919270833vw;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  gap: 6.25vw;
+  align-items: flex-start;
+  justify-content: center;
+}
+.nri-benefits__image {
+  flex: 0 0 32.78625vw;
+  height: 43.79046875vw;
+  overflow: hidden;
+}
+.nri-benefits__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.nri-benefits__content {
+  flex: 0 0 49.793125vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208333333vw;
+  margin-top: 1.603125vw;
+}
+.nri-benefits__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.78125vw;
+  width: 100%;
+}
+.nri-benefits__header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.78125vw;
+}
+.nri-benefits__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720c10;
+  text-align: left;
+}
+.nri-benefits__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-benefits__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0C0D0D;
+  margin: 0;
+  max-width: 36.8056770833vw;
+  white-space: pre-wrap;
+}
+.nri-benefits__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  width: 49.7916666667vw;
+}
+.nri-benefits__grid-row {
+  display: flex;
+  align-items: flex-start;
+}
+.nri-benefits__grid-row--first {
+  justify-content: center;
+}
+.nri-benefits__grid-row--second {
+  justify-content: flex-start;
+}
+.nri-benefits__grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+  align-items: center;
+  width: 12.6822916667vw;
+  flex: 0 0 12.6822916667vw;
+}
+.nri-benefits__grid-icon {
+  width: 2.1875vw;
+  height: 2.1875vw;
+  flex-shrink: 0;
+}
+.nri-benefits__grid-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nri-benefits__grid-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.7291666667vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #19191a;
+  text-align: center;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.nri-benefits__grid-row--first .nri-benefits__grid-text {
+  width: 9.21875vw;
+}
+.nri-benefits__grid-row--second .nri-benefits__grid-text {
+  width: 9.21875vw;
+}
+.nri-benefits__grid-row--first .nri-benefits__grid-item:nth-child(2) .nri-benefits__grid-text, .nri-benefits__grid-row--second .nri-benefits__grid-item:nth-child(2) .nri-benefits__grid-text {
+  width: 8.4375vw;
+}
+.nri-benefits__grid-row--first .nri-benefits__grid-item:nth-child(3) .nri-benefits__grid-text {
+  width: auto;
+  min-width: fit-content;
+}
+.nri-benefits__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0vw;
+}
+.nri-benefits__footer-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0C0D0D;
+  margin: 0;
+  max-width: 50.7291666667vw;
+  white-space: pre-wrap;
+}
+.nri-benefits__button {
+  position: relative;
+  background: #FFFFFF;
+  border: none;
+  padding: 1.5625vw;
+  display: flex;
+  gap: 0.7552083333vw;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.nri-benefits__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625vw;
+  height: 4.0104166667vw;
+  background: #720c10;
+}
+.nri-benefits__button span {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #0C0D0D;
+  font-weight: 325;
+  text-align: center;
+}
+.nri-benefits__button-icon {
+  width: 0.8102083333vw;
+  height: 0.8102083333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: rotate(315deg);
+}
+.nri-benefits__button-icon svg {
+  width: 0.5729166667vw;
+  height: 0.5729166667vw;
+  display: block;
+}
+
+.nri-director {
+  position: relative;
+  min-height: 53.1020833333vw;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/nri/nri-director-bg.jpg");
+  overflow: hidden;
+}
+.nri-director__background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/nri/nri-director-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+}
+.nri-director__container {
+  position: relative;
+  padding: 2.6041666667vw 9.5734375vw;
+  display: flex;
+  align-items: center;
+  gap: 5.2083333333vw;
+  z-index: 2;
+  min-height: 53.1020833333vw;
+}
+.nri-director__content {
+  flex: 0 0 43.5416666667vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+  align-items: flex-start;
+}
+.nri-director__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  padding: 1.5625vw;
+  padding-left: 0;
+}
+.nri-director__header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.34375vw;
+  width: 100%;
+  max-width: 100%;
+}
+.nri-director__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720c10;
+}
+.nri-director__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.75vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+  max-width: 41.4260416667vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.nri-director__title-line {
+  margin: 0;
+}
+.nri-director__title-line:first-child {
+  margin-bottom: 0.5208333333vw;
+}
+.nri-director__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0C0D0D;
+  margin: 0;
+  max-width: 38.5416666667vw;
+}
+.nri-director__services {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9895833333vw;
+}
+.nri-director__service-item {
+  display: flex;
+  gap: 1.0416666667vw;
+  align-items: center;
+}
+.nri-director__service-icon {
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+  flex-shrink: 0;
+}
+.nri-director__service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nri-director__service-text {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #19191A;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-director__footer-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0C0D0D;
+  margin: 0;
+  max-width: 38.5416666667vw;
+  padding-left: 1.5625vw;
+}
+.nri-director__image {
+  flex: 0 0 46.6286458333vw;
+  height: 44.05625vw;
+  position: relative;
+}
+.nri-director__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.nri-testimonials {
+  position: relative;
+  background: #F4EAD7;
+  padding: 2.6041666667vw 0 5.2083333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6458333333vw;
+  align-items: center;
+}
+.nri-testimonials__decoration {
+  position: absolute;
+  top: 0.0208333333vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/nri/nri-testimonials-decoration.png");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.nri-testimonials__container {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 3.1973958333vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  align-items: center;
+}
+.nri-testimonials__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.nri-testimonials__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720C10;
+  width: 100%;
+}
+.nri-testimonials__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-testimonials__cards {
+  display: flex;
+  gap: 1.0416666667vw;
+  align-items: center;
+  width: 100%;
+  max-width: 93.6046875vw;
+  margin-top: 2.6041666667vw;
+}
+.nri-testimonials__card {
+  flex: 1;
+  max-width: 30.5072916667vw;
+  height: 20.78125vw;
+  position: relative;
+  padding: 1.4661458333vw 1.4265625vw;
+  background: rgba(244, 234, 215, 0.8);
+  backdrop-filter: blur(0.7536458333vw);
+  border: 0.0358854167vw solid #F4EAD7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  border: 1px solid #fdfdfd;
+  background: linear-gradient(180deg, rgba(224, 189, 117, 0.3) 0.55%, rgba(224, 189, 117, 0) 100%);
+  backdrop-filter: blur(14.4711589813px);
+}
+.nri-testimonials__card-quote {
+  width: 4.3786458333vw;
+  height: 3.3739583333vw;
+  flex-shrink: 0;
+}
+.nri-testimonials__card-quote img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nri-testimonials__card-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #0C0D0D;
+  margin: 0;
+  flex: 1;
+}
+.nri-testimonials__card-author {
+  display: flex;
+  gap: 0.7697916667vw;
+  align-items: center;
+  margin-top: auto;
+}
+.nri-testimonials__card-avatar {
+  width: 3.0151041667vw;
+  height: 3.0151041667vw;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nri-testimonials__card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nri-testimonials__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7697916667vw;
+}
+.nri-testimonials__card-name {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.28125vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-testimonials__footer-text {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #0C0D0D;
+  font-weight: 325;
+  text-align: center;
+  margin: 2.6041666667vw 0 0 0;
+}
+.nri-testimonials__dots {
+  display: flex;
+  gap: 0.625vw;
+  align-items: center;
+  margin-top: 1.5625vw;
+}
+.nri-testimonials__dot {
+  width: 0.6192708333vw;
+  height: 0.6192708333vw;
+  border-radius: 50%;
+  background: #0C0D0D;
+  opacity: 0.3;
+}
+.nri-testimonials__dot:first-child {
+  opacity: 1;
+}
+
+.nri-cta {
+  position: relative;
+  background: #F4EAD7;
+  padding: 6.25vw 5.2083333333vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 8.8020833333vw;
+}
+.nri-cta__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/nri/nri-cta-decoration.png");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.nri-cta__container {
+  position: relative;
+  display: flex;
+  gap: 8.8020833333vw;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 2;
+}
+.nri-cta__left {
+  flex: 0 0 38.0208333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+}
+.nri-cta__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #720C10;
+}
+.nri-cta__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 325;
+  margin: 0;
+}
+.nri-cta__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  max-width: 38.703125vw;
+}
+.nri-cta__description {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #0C0D0D;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .nri-overview {
+    padding: 4.1666666667vw 3.125vw;
+    gap: 2.6041666667vw;
+  }
+  .nri-overview__left {
+    flex: 0 0 26.0416666667vw;
+  }
+  .nri-overview__title {
+    font-size: 2.5vw;
+  }
+  .nri-architecture {
+    min-height: 36.4583333333vw;
+  }
+  .nri-architecture__title {
+    font-size: 3.0208333333vw;
+  }
+  .nri-architecture__feature-row {
+    flex-direction: column;
+    gap: 2.0833333333vw;
+  }
+  .nri-why-choose {
+    padding: 3.125vw 2.6041666667vw;
+  }
+  .nri-why-choose__header {
+    flex-direction: column;
+    gap: 2.6041666667vw;
+  }
+  .nri-why-choose__items {
+    flex-direction: column;
+  }
+  .nri-benefits__container {
+    flex-direction: column;
+  }
+  .nri-benefits__image {
+    width: 100%;
+    height: 26.0416666667vw;
+  }
+  .nri-director__container {
+    flex-direction: column;
+    padding: 2.0833333333vw 2.6041666667vw;
+  }
+  .nri-director__image {
+    width: 100%;
+    height: auto;
+  }
+  .nri-testimonials__cards {
+    flex-direction: column;
+  }
+  .nri-testimonials__card {
+    max-width: 100%;
+  }
+  .nri-cta {
+    padding: 4.1666666667vw 3.125vw;
+    gap: 2.6041666667vw;
+  }
+  .nri-cta__container {
+    flex-direction: column;
+    gap: 2.6041666667vw;
+  }
+}
+@media (max-width: 767px) {
+  .nri-overview {
+    padding: 3.125vw 2.0833333333vw;
+    flex-direction: column;
+  }
+  .nri-overview__left, .nri-overview__right {
+    flex: 1;
+    max-width: 100%;
+  }
+  .nri-overview__title {
+    font-size: 2.1875vw;
+  }
+  .nri-architecture__title {
+    font-size: 2.5vw;
+  }
+  .nri-architecture__feature-text {
+    font-size: 1.0416666667vw;
+  }
+  .nri-why-choose {
+    padding: 2.6041666667vw 2.0833333333vw;
+  }
+  .nri-why-choose__title {
+    font-size: 2.5vw;
+  }
+  .nri-why-choose__item-number {
+    font-size: 3.75vw;
+  }
+  .nri-why-choose__item-text {
+    font-size: 1.0416666667vw;
+  }
+  .nri-benefits__title {
+    font-size: 2.5vw;
+  }
+  .nri-benefits__grid-item {
+    width: 100%;
+    max-width: 15.625vw;
+  }
+  .nri-director__title {
+    font-size: 3.0208333333vw;
+  }
+  .nri-director__service-text {
+    font-size: 1.0416666667vw;
+  }
+  .nri-testimonials__title {
+    font-size: 2.5vw;
+  }
+  .nri-cta {
+    padding: 3.125vw 2.0833333333vw;
+  }
+  .nri-cta__title {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 479px) {
+  .nri-overview {
+    padding: 9.6618357488vw 3.8647342995vw;
+  }
+  .nri-overview__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-overview__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-overview__description {
+    font-size: 3.3816425121vw;
+  }
+  .nri-overview__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nri-overview__button .btn {
+    margin: 0 auto;
+  }
+  .nri-architecture__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-architecture__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-architecture__description {
+    font-size: 3.3816425121vw;
+  }
+  .nri-architecture__feature-text {
+    font-size: 3.8647342995vw;
+  }
+  .nri-architecture__feature-item {
+    max-width: 100%;
+  }
+  .nri-architecture__feature-icon {
+    width: 4.8309178744vw;
+    height: 4.8309178744vw;
+  }
+  .nri-architecture__footer-text {
+    font-size: 3.3816425121vw;
+    max-width: 80%;
+  }
+  .nri-why-choose {
+    padding: 9.6618357488vw 3.8647342995vw;
+  }
+  .nri-why-choose__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-why-choose__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-why-choose__description {
+    font-size: 3.3816425121vw;
+  }
+  .nri-why-choose__item-number {
+    font-size: 11.5942028986vw;
+  }
+  .nri-why-choose__item-text {
+    font-size: 3.8647342995vw;
+  }
+  .nri-why-choose__header {
+    height: auto;
+  }
+  .nri-benefits {
+    padding: 9.6618357488vw 0;
+  }
+  .nri-benefits__container {
+    padding: 0 3.8647342995vw;
+    flex-direction: column;
+  }
+  .nri-benefits__image {
+    height: 72.4637681159vw;
+  }
+  .nri-benefits__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-benefits__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-benefits__description {
+    font-size: 3.3816425121vw;
+  }
+  .nri-benefits__grid-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .nri-benefits__grid-text {
+    font-size: 2.8985507246vw;
+  }
+  .nri-director__container {
+    padding: 9.6618357488vw 3.8647342995vw;
+    flex-direction: column;
+  }
+  .nri-director__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-director__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-director__description {
+    font-size: 3.3816425121vw;
+  }
+  .nri-director__service-text {
+    font-size: 3.8647342995vw;
+  }
+  .nri-testimonials {
+    padding: 9.6618357488vw 0 14.4927536232vw;
+  }
+  .nri-testimonials__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-testimonials__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-testimonials__card {
+    height: auto;
+    padding: 4.8309178744vw;
+  }
+  .nri-testimonials__card-text {
+    font-size: 3.3816425121vw;
+  }
+  .nri-testimonials__card-name {
+    font-size: 4.347826087vw;
+  }
+  .nri-cta {
+    padding: 9.6618357488vw 3.8647342995vw;
+  }
+  .nri-cta__label {
+    font-size: 3.3816425121vw;
+  }
+  .nri-cta__title {
+    font-size: 6.7632850242vw;
+  }
+  .nri-cta__description {
+    font-size: 3.3816425121vw;
+  }
+}
+.downloadCta {
+  width: 15.625vw;
 }
 
 html {

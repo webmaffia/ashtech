@@ -444,15 +444,19 @@
 
   &__image {
     flex: 0 0 vw(629.496);
-    height: vw(840.777);
+    width: vw(629.496);
+    height: vw(840);
+    min-height: vw(840);
+    max-height: vw(840);
     overflow: hidden;
-    
+    align-self: flex-start;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
+      display: block;
     }
   }
 
@@ -516,9 +520,11 @@
   &__grid-row {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: vw(20);
 
     &--first {
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     &--second {
@@ -531,8 +537,9 @@
     flex-direction: column;
     gap: vw(12);
     align-items: center;
-    width: vw(243.5);
-    flex: 0 0 vw(243.5);
+    width: 23%;
+   
+    max-width: calc(50% - vw(10));
   }
 
   &__grid-icon {
@@ -671,7 +678,7 @@
   }
 
   &__content {
-    flex: 0 0 vw(836);
+    flex: 0 0 vw(875);
     display: flex;
     flex-direction: column;
     gap: vw(30);
@@ -864,7 +871,31 @@
     width: 100%;
     max-width: vw(1797.21);
     margin-top: vw(50);
-    
+    overflow: hidden;
+    position: relative;
+
+    .tm-item {
+      outline: none;
+    }
+
+    .slick-list {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slick-track {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .slick-slide {
+      height: auto;
+      
+      > div {
+        height: 100%;
+        display: flex;
+      }
+    }
   }
 
   &__card {
@@ -1090,11 +1121,33 @@ backdrop-filter: blur(14.471158981323242px);
   .nri-benefits {
     &__container {
       flex-direction: column;
+      gap: vw(50);
+      padding: 0 vw(50);
     }
 
     &__image {
       width: 100%;
-      height: vw(500);
+      flex: 0 0 auto;
+      height: vw(440);
+      min-height: vw(440);
+      max-height: vw(440);
+      align-self: stretch;
+    }
+
+    &__content {
+      flex: 1;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    &__grid {
+      width: 100%;
+    }
+
+    &__grid-item {
+      width: calc(50% - vw(10));
+      flex: 0 0 calc(50% - vw(10));
+      max-width: calc(50% - vw(10));
     }
   }
 
@@ -1112,7 +1165,18 @@ backdrop-filter: blur(14.471158981323242px);
 
   .nri-testimonials {
     &__cards {
-      flex-direction: column;
+      overflow: visible;
+      
+      .slick-list {
+        overflow: visible;
+      }
+
+      .slick-slide {
+        > div {
+          display: flex;
+          height: 100%;
+        }
+      }
     }
 
     &__card {
@@ -1170,20 +1234,47 @@ backdrop-filter: blur(14.471158981323242px);
 
 
     }
+    &__header {
+    text-align: center;
+    align-items: center;
+    }
 
     &__item-text {
       font-size: vw(20);
     }
+    &__label {
+      width: 100%;
+    }
+    &__header-right{
+      max-width: 100%;
+    }
   }
 
   .nri-benefits {
+    padding: vw(60) 0;
+
+    &__container {
+      padding: 0 vw(40);
+      gap: vw(40);
+    }
+
     &__title {
       font-size: vw(48);
     }
 
-    &__grid-item {
+    &__image {
       width: 100%;
-      max-width: vw(300);
+      flex: 0 0 auto;
+      height: vw(440);
+      min-height: vw(440);
+      max-height: vw(440);
+      align-self: stretch;
+    }
+
+    &__grid-item {
+      width: calc(50% - vw(10));
+      flex: 0 0 calc(50% - vw(10));
+      max-width: calc(50% - vw(10));
     }
   }
 
@@ -1271,6 +1362,9 @@ backdrop-filter: blur(14.471158981323242px);
 
   .nri-why-choose {
     padding: vw(40, 414) vw(16, 414);
+    &__items {
+     align-items: center;
+    }
 
     &__label {
       font-size: vw(14, 414);
@@ -1285,11 +1379,12 @@ backdrop-filter: blur(14.471158981323242px);
     }
 
     &__item-number {
-      font-size: vw(48, 414);
+      font-size: vw(90, 414);
     }
 
     &__item-text {
-      font-size: vw(16, 414);
+      font-size: vw(20, 414);
+      width: vw(200,414) !important;
     }
     &__header {
     height: auto;
@@ -1302,10 +1397,22 @@ backdrop-filter: blur(14.471158981323242px);
     &__container {
       padding: 0 vw(16, 414);
       flex-direction: column;
+      gap: vw(30, 414);
+      max-width: 100%;
     }
 
     &__image {
-      height: vw(300, 414);
+      width: 100%;
+      flex: 0 0 auto;
+      height: vw(440, 414);
+      min-height: vw(440, 414);
+      max-height: vw(440, 414);
+      align-self: stretch;
+    }
+
+    &__content {
+      width: 100%;
+      margin-top: 0;
     }
 
     &__label {
@@ -1318,16 +1425,45 @@ backdrop-filter: blur(14.471158981323242px);
 
     &__description {
       font-size: vw(14, 414);
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__grid {
+      width: 100%;
+    }
+
+    &__grid-row {
+     row-gap: vw(30, 414);
     }
 
     &__grid-item {
-      width: 100%;
-      max-width: 100%;
+      width: calc(50% - vw(7.5, 414));
+      flex: 0 0 calc(50% - vw(7.5, 414));
+      max-width: calc(50% - vw(7.5, 414));
     }
 
     &__grid-text {
       font-size: vw(12, 414);
+      width: 100% !important;
     }
+    &__header-inner{
+      align-items: center;
+      text-align: center;
+    }
+    &__grid-icon {
+      width: vw(30, 414);
+      height: vw(30, 414);
+    }
+    &__footer-text {
+      font-size: vw(16, 414);
+      max-width: 100%;
+      margin: vw(20, 414) 0;
+      font-weight: 400;
+      text-align: center;
+    }
+  
+     
   }
 
   .nri-director {
@@ -1336,12 +1472,22 @@ backdrop-filter: blur(14.471158981323242px);
       flex-direction: column;
     }
 
+    &__description {
+      max-width: 100%;
+    }
+
     &__label {
       font-size: vw(14, 414);
     }
 
+    &__service-icon {
+      width: vw(20, 414);
+      height: vw(20, 414);
+    }
+
     &__title {
       font-size: vw(28, 414);
+      max-width: 100%;
     }
 
     &__description {
@@ -1351,10 +1497,28 @@ backdrop-filter: blur(14.471158981323242px);
     &__service-text {
       font-size: vw(16, 414);
     }
+    &__header-inner{
+      align-items: center;
+      text-align: center;
+    }
+    &__service-item{
+     margin-bottom: vw(10, 414);
+      gap: vw(10, 414);
+    }
+    &__footer-text {
+      font-size: vw(14, 414);
+      padding-left: 0;
+      max-width: 100%;
+      margin-bottom: vw(20, 414);
+    }
   }
 
   .nri-testimonials {
     padding: vw(40, 414) 0 vw(60, 414);
+
+    &__container {
+      padding: 0 vw(16, 414);
+    }
 
     &__label {
       font-size: vw(14, 414);
@@ -1363,10 +1527,42 @@ backdrop-filter: blur(14.471158981323242px);
     &__title {
       font-size: vw(28, 414);
     }
+    &__footer-text {
+      font-size: vw(14, 414);
+    }
+
+    &__cards {
+      width: 100%;
+      max-width: 100%;
+      margin-top: vw(30, 414);
+      
+      .slick-list {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slick-slide {
+        padding: 0;
+        
+        > div {
+          padding: vw(20, 414);
+          height: vw(265,414);
+        }
+      }
+    }
 
     &__card {
       height: auto;
       padding: vw(20, 414);
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__card-quote {
+      width: vw(60, 414);
+      height: vw(45, 414);
     }
 
     &__card-text {
@@ -1376,6 +1572,22 @@ backdrop-filter: blur(14.471158981323242px);
     &__card-name {
       font-size: vw(18, 414);
     }
+
+    &__card-avatar {
+      width: vw(45, 414);
+      height: vw(45, 414);
+    }
+
+    &__dots {
+      margin-top: vw(20, 414);
+      gap: vw(8, 414);
+      
+      .nri-testimonials__dot {
+        width: vw(8, 414);
+        height: vw(8, 414);
+      }
+    }
+    
   }
 
   .nri-cta {
@@ -1392,10 +1604,42 @@ backdrop-filter: blur(14.471158981323242px);
     &__description {
       font-size: vw(14, 414);
     }
+    &__right{
+      max-width: 100%;
+      text-align: center;
+      p {
+        br{
+          display: none;
+        }
+      }
+    }
+    &__left{
+      flex: 0 0 vw(65, 414);
+      
+    }
   }
 }
 
 
 .downloadCta{
   width: vw(300);
+  @include respond-to('mobile') {
+    width: vw(220,414);
+    margin: 0 auto;
+  }
+}
+
+.nri-testimonials__dot {
+  display:inline-block;
+
+  border-radius:50%;
+  background: #E0BD75;
+  
+  transition: transform .18s, background .18s;
+  cursor:pointer;
+  opacity: 1;
+}
+.nri-testimonials__dot.active {
+  background: #720C10;
+  transform: scale(1.25);
 }

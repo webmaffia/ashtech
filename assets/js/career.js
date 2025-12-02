@@ -113,3 +113,4 @@ if (!prefersReducedMotion) {
 
 console.log('Career page animations initialized');
 
+

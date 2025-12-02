@@ -49,6 +49,12 @@
 @import 'sections/contact-offices';
 @import 'sections/contact-form';
 
+// Resources Page Sections
+@import 'sections/resources-tabs';
+@import 'sections/resources-content';
+@import 'sections/resources-news';
+@import 'components/news-card';
+
 
 html {
     overflow-x: hidden;

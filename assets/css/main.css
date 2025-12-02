@@ -3193,6 +3193,10 @@ table {
   background-image: url("../images/resources/banner.png") !important;
 }
 
+.careerbg {
+  background-image: url("../images/career/banner.png") !important;
+}
+
 .contactbg {
   background-image: url("../images/contact/bg_banner.png") !important;
 }
@@ -3410,7 +3414,7 @@ table {
   left: 0;
   width: 50vw;
   height: 26.1458333333vw;
-  background-image: url("https://www.figma.com/api/mcp/asset/1b2d34f7-a9c4-4321-b7db-6140b839ab20");
+  background-image: url("../images/decore.svg");
   background-size: cover;
   background-position: center;
   pointer-events: none;
@@ -4193,7 +4197,7 @@ table {
   left: 0;
   width: 50vw;
   height: 26.1458333333vw;
-  background-image: url("https://www.figma.com/api/mcp/asset/72c5548e-4180-4f92-88e7-15d27178fd9e");
+  background-image: url("../images/decore.svg");
   background-size: cover;
   background-position: center;
   pointer-events: none;
@@ -4536,7 +4540,7 @@ table {
   left: 0;
   width: 50vw;
   height: 26.1458333333vw;
-  background-image: url("https://www.figma.com/api/mcp/asset/5e1a5043-9967-4e47-8cf6-c4adfa15719e");
+  background-image: url("../images/decore.svg");
   background-size: cover;
   background-position: center;
   pointer-events: none;
@@ -7140,6 +7144,1078 @@ table {
   }
   .news-card__link {
     font-size: 3.3816425121vw;
+  }
+}
+
+.career-overview {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 6.25vw 0;
+  overflow: hidden;
+}
+.career-overview__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/career/overview-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.career-overview__container {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5.2083333333vw;
+  display: flex;
+  gap: 3.6458333333vw;
+  align-items: flex-start;
+}
+.career-overview__left {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  width: 28.9583333333vw;
+}
+.career-overview__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 600;
+  margin: 0;
+}
+.career-overview__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+}
+.career-overview__right {
+  flex: 1;
+  max-width: 50.7291666667vw;
+}
+.career-overview__text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.7;
+  color: #0C0D0D;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208333333vw;
+}
+.career-overview__text p {
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .career-overview {
+    padding: 7.8125vw 0;
+  }
+  .career-overview__container {
+    padding: 0 5.859375vw;
+    flex-direction: column;
+    gap: 3.90625vw;
+  }
+  .career-overview__left {
+    width: 100%;
+    gap: 2.9296875vw;
+  }
+  .career-overview__label {
+    font-size: 1.5625vw;
+  }
+  .career-overview__title {
+    font-size: 4.6875vw;
+  }
+  .career-overview__right {
+    max-width: 100%;
+  }
+  .career-overview__text {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-overview {
+    padding: 14.4927536232vw 0;
+  }
+  .career-overview__container {
+    padding: 0 4.8309178744vw;
+    gap: 7.2463768116vw;
+  }
+  .career-overview__left {
+    gap: 6.038647343vw;
+    align-items: center;
+    text-align: center;
+  }
+  .career-overview__label {
+    font-size: 3.3816425121vw;
+  }
+  .career-overview__title {
+    font-size: 8.6956521739vw;
+  }
+  .career-overview__text {
+    font-size: 3.8647342995vw;
+    text-align: center;
+  }
+}
+
+.career-why {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 2.6041666667vw 0 5.2083333333vw;
+  overflow: hidden;
+}
+.career-why__container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5.2083333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208333333vw;
+}
+.career-why__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  margin-bottom: 3.125vw;
+}
+.career-why__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 600;
+  margin: 0;
+  text-transform: capitalize;
+}
+.career-why__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  max-width: 39.375vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.career-why__cards {
+  display: flex;
+  gap: 1.5625vw;
+  align-items: flex-start;
+  justify-content: center;
+}
+.career-why__card {
+  width: 28.6458333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+  align-items: center;
+}
+.career-why__card--offset-1 {
+  padding-top: 15.625vw;
+}
+.career-why__card--offset-2 {
+  padding-top: 4.1666666667vw;
+}
+.career-why__card--offset-3 {
+  padding-top: 10.4166666667vw;
+}
+.career-why__image {
+  width: 28.6458333333vw;
+  height: 25vw;
+  overflow: hidden;
+  position: relative;
+}
+.career-why__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+.career-why__card:hover .career-why__image img {
+  transform: scale(1.05);
+}
+.career-why__content {
+  width: 24.7916666667vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+}
+.career-why__card-title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.875vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 400;
+  margin: 0;
+}
+.career-why__card-desc {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #19191A;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .career-why {
+    padding: 3.90625vw 0 7.8125vw;
+  }
+  .career-why__container {
+    padding: 0 5.859375vw;
+  }
+  .career-why__header {
+    gap: 2.44140625vw;
+    margin-bottom: 3.90625vw;
+  }
+  .career-why__label {
+    font-size: 1.5625vw;
+  }
+  .career-why__title {
+    font-size: 4.6875vw;
+  }
+  .career-why__cards {
+    flex-direction: column;
+    gap: 5.859375vw;
+    align-items: center;
+  }
+  .career-why__card {
+    width: 100%;
+    max-width: 58.59375vw;
+  }
+  .career-why__card--offset-1, .career-why__card--offset-2, .career-why__card--offset-3 {
+    padding-top: 0;
+  }
+  .career-why__image {
+    width: 100%;
+    height: 39.0625vw;
+  }
+  .career-why__content {
+    width: 100%;
+    gap: 2.44140625vw;
+  }
+  .career-why__card-title {
+    font-size: 2.9296875vw;
+  }
+  .career-why__card-desc {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-why {
+    padding: 7.2463768116vw 0 14.4927536232vw;
+  }
+  .career-why__container {
+    padding: 0 4.8309178744vw;
+  }
+  .career-why__header {
+    gap: 4.8309178744vw;
+    margin-bottom: 7.2463768116vw;
+  }
+  .career-why__label {
+    font-size: 3.3816425121vw;
+  }
+  .career-why__title {
+    font-size: 8.6956521739vw;
+    max-width: 100%;
+  }
+  .career-why__cards {
+    gap: 9.6618357488vw;
+  }
+  .career-why__card {
+    max-width: 100%;
+  }
+  .career-why__image {
+    height: 72.4637681159vw;
+  }
+  .career-why__content {
+    gap: 4.8309178744vw;
+  }
+  .career-why__card-title {
+    font-size: 5.7971014493vw;
+  }
+  .career-why__card-desc {
+    font-size: 3.8647342995vw;
+  }
+}
+
+.career-life {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 3.125vw 0 1.875vw;
+  overflow: hidden;
+}
+.career-life__container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5.2083333333vw;
+  display: flex;
+  gap: 1.5625vw;
+  align-items: flex-start;
+}
+.career-life__left, .career-life__right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+}
+.career-life__left {
+  width: 30.1041666667vw;
+}
+.career-life__right {
+  width: 32.65625vw;
+  padding-top: 9.8958333333vw;
+}
+.career-life__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 5.2083333333vw;
+  line-height: 1.2;
+  color: #E0BD75;
+  font-weight: 325;
+  margin: 0;
+}
+.career-life__text-box {
+  background-color: #FFFFFF;
+  padding: 2.0833333333vw 2.6041666667vw 2.0833333333vw 2.6041666667vw;
+  box-shadow: inset 0.4166666667vw 0 0 0 #720C10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208333333vw;
+}
+.career-life__text-box p {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.7;
+  color: #0C0D0D;
+  font-weight: 500;
+  margin: 0;
+}
+.career-life__image {
+  flex: 0 0 23.6979166667vw;
+  height: 35.6770833333vw;
+  overflow: hidden;
+  position: relative;
+}
+.career-life__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.career-life__footer-text {
+  text-align: center;
+  padding: 2.6041666667vw 5.2083333333vw 0;
+}
+.career-life__footer-text p {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.7;
+  color: #0C0D0D;
+  font-weight: 500;
+  margin: 0;
+}
+.career-life__footer-text p strong {
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .career-life {
+    padding: 4.8828125vw 0 2.9296875vw;
+  }
+  .career-life__container {
+    padding: 0 5.859375vw;
+    flex-direction: column;
+    gap: 3.90625vw;
+  }
+  .career-life__left, .career-life__right {
+    width: 100%;
+    gap: 2.9296875vw;
+  }
+  .career-life__right {
+    padding-top: 0;
+  }
+  .career-life__title {
+    font-size: 7.8125vw;
+  }
+  .career-life__text-box {
+    padding: 2.9296875vw 3.90625vw;
+    box-shadow: inset 0.5859375vw 0 0 0 #720C10;
+  }
+  .career-life__image {
+    flex: 1;
+    width: 100%;
+    height: 48.828125vw;
+  }
+  .career-life__footer-text {
+    padding: 3.90625vw 5.859375vw 0;
+  }
+  .career-life__footer-text p {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-life {
+    padding: 9.6618357488vw 0 6.038647343vw;
+  }
+  .career-life__container {
+    padding: 0 4.8309178744vw;
+    gap: 7.2463768116vw;
+  }
+  .career-life__left, .career-life__right {
+    gap: 6.038647343vw;
+  }
+  .career-life__title {
+    font-size: 14.4927536232vw;
+  }
+  .career-life__text-box {
+    padding: 6.038647343vw 7.2463768116vw;
+    box-shadow: inset 0.9661835749vw 0 0 0 #720C10;
+  }
+  .career-life__text-box p {
+    font-size: 3.8647342995vw;
+  }
+  .career-life__image {
+    height: 96.6183574879vw;
+  }
+  .career-life__footer-text {
+    padding: 7.2463768116vw 4.8309178744vw 0;
+  }
+  .career-life__footer-text p {
+    font-size: 3.8647342995vw;
+  }
+}
+
+.career-openings {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 2.6041666667vw 0 3.6458333333vw;
+  overflow: hidden;
+}
+.career-openings__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/career/background-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.career-openings__container {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5.2083333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6458333333vw;
+}
+.career-openings__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+}
+.career-openings__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 600;
+  margin: 0;
+}
+.career-openings__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+}
+.career-openings__list {
+  width: 100%;
+  max-width: 55.8333333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.career-openings__apply {
+  flex-shrink: 0;
+}
+.career-openings__how-to-apply {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  max-width: 39.375vw;
+}
+.career-openings__apply-title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.875vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+}
+.career-openings__apply-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+  margin: 0;
+}
+.career-openings__apply-text strong {
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .career-openings {
+    padding: 3.90625vw 0 5.859375vw;
+  }
+  .career-openings__container {
+    padding: 0 5.859375vw;
+    gap: 4.8828125vw;
+  }
+  .career-openings__header {
+    gap: 2.44140625vw;
+  }
+  .career-openings__label {
+    font-size: 1.5625vw;
+  }
+  .career-openings__title {
+    font-size: 4.6875vw;
+  }
+  .career-openings__how-to-apply {
+    gap: 2.44140625vw;
+  }
+  .career-openings__apply-title {
+    font-size: 2.9296875vw;
+  }
+  .career-openings__apply-text {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-openings {
+    padding: 7.2463768116vw 0 12.077294686vw;
+  }
+  .career-openings__container {
+    padding: 0 4.8309178744vw;
+    gap: 9.6618357488vw;
+  }
+  .career-openings__header {
+    gap: 4.8309178744vw;
+  }
+  .career-openings__label {
+    font-size: 3.3816425121vw;
+  }
+  .career-openings__list {
+    max-width: 100%;
+  }
+  .career-openings__title {
+    font-size: 8.6956521739vw;
+  }
+  .career-openings__how-to-apply {
+    gap: 4.8309178744vw;
+    max-width: 100%;
+  }
+  .career-openings__apply-title {
+    font-size: 5.7971014493vw;
+  }
+  .career-openings__apply-text {
+    font-size: 3.8647342995vw;
+  }
+}
+
+.career-form {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 3.125vw 0 6.25vw;
+  overflow: hidden;
+}
+.career-form__background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/career/form-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.career-form__container {
+  position: relative;
+  z-index: 1;
+  max-width: 51.25vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8229166667vw;
+}
+.career-form__header {
+  text-align: center;
+  width: 100%;
+}
+.career-form__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+}
+.career-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+  width: 100%;
+  max-width: 51.25vw;
+  align-items: flex-start;
+}
+.career-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+  width: 100%;
+}
+.career-form__field {
+  width: 100%;
+  max-width: 51.1458333333vw;
+}
+.career-form__field--country {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 7.2916666667vw;
+}
+.career-form__field--phone {
+  flex: 1;
+  min-width: 0;
+}
+.career-form__field--upload {
+  position: relative;
+}
+.career-form__field-group {
+  display: flex;
+  gap: 0.4166666667vw;
+  width: 100%;
+  max-width: 51.1458333333vw;
+  align-items: stretch;
+}
+.career-form__input, .career-form__textarea {
+  width: 100%;
+  padding: 1.0416666667vw;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.career-form__input::placeholder, .career-form__textarea::placeholder {
+  color: rgba(12, 13, 13, 0.6);
+  opacity: 1;
+}
+.career-form__input:focus, .career-form__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1041666667vw #720C10;
+}
+.career-form__input:read-only, .career-form__textarea:read-only {
+  cursor: default;
+  background-color: #FFFFFF;
+}
+.career-form__file-input {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.career-form__file-label {
+  width: 100%;
+  padding: 1.0416666667vw;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: rgba(12, 13, 13, 0.6);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5208333333vw;
+  transition: all 0.3s ease-in-out;
+}
+.career-form__file-label img {
+  width: 1.25vw;
+  height: 1.25vw;
+  object-fit: contain;
+}
+.career-form__file-label:hover {
+  background-color: #f8f8f8;
+}
+.career-form__textarea {
+  height: 7.65625vw;
+  resize: vertical;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.career-form__submit {
+  align-self: flex-start;
+}
+@media (max-width: 1024px) {
+  .career-form {
+    padding: 4.8828125vw 0 7.8125vw;
+  }
+  .career-form__container {
+    padding: 0;
+    gap: 2.9296875vw;
+  }
+  .career-form__title {
+    font-size: 4.6875vw;
+  }
+  .career-form__form {
+    gap: 2.44140625vw;
+  }
+  .career-form__fields {
+    gap: 0.9765625vw;
+  }
+  .career-form__field-group {
+    gap: 0.5859375vw;
+    width: 100%;
+  }
+  .career-form__field {
+    width: 100%;
+  }
+  .career-form__field--country {
+    min-width: auto;
+    width: auto;
+  }
+  .career-form__field--phone {
+    width: 100%;
+    flex: 1;
+  }
+  .career-form__input, .career-form__textarea {
+    padding: 1.7578125vw;
+    font-size: 1.7578125vw;
+  }
+  .career-form__file-label {
+    padding: 1.7578125vw;
+    font-size: 1.7578125vw;
+  }
+  .career-form__file-label img {
+    width: 1.953125vw;
+    height: 1.953125vw;
+  }
+  .career-form__textarea {
+    height: 11.71875vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-form {
+    padding: 9.6618357488vw 0 14.4927536232vw;
+  }
+  .career-form__container {
+    padding: 0 4.8309178744vw;
+    gap: 6.038647343vw;
+    max-width: 100%;
+  }
+  .career-form__title {
+    font-size: 8.6956521739vw;
+  }
+  .career-form__form {
+    gap: 4.8309178744vw;
+    max-width: 100%;
+  }
+  .career-form__fields {
+    gap: 2.4154589372vw;
+  }
+  .career-form__field-group {
+    flex-direction: row;
+    gap: 1.9323671498vw;
+    width: 100%;
+    max-width: 100%;
+  }
+  .career-form__field {
+    width: auto;
+    max-width: 100%;
+  }
+  .career-form__field--country {
+    flex: 0 0 auto;
+    min-width: 33.8164251208vw;
+  }
+  .career-form__field--phone {
+    flex: 1;
+    min-width: 0;
+  }
+  .career-form__input, .career-form__textarea {
+    padding: 3.6231884058vw;
+    font-size: 3.8647342995vw;
+  }
+  .career-form__file-label {
+    padding: 3.6231884058vw;
+    font-size: 3.8647342995vw;
+  }
+  .career-form__file-label img {
+    width: 4.347826087vw;
+    height: 4.347826087vw;
+  }
+  .career-form__textarea {
+    height: 24.154589372vw;
+  }
+}
+
+.career-assurance {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 6.25vw 0;
+  overflow: hidden;
+}
+.career-assurance__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.46875vw;
+  height: 21.1458333333vw;
+  background-image: url("../images/career/overview-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.career-assurance__container {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5.2083333333vw;
+  display: flex;
+  gap: 3.6458333333vw;
+  align-items: flex-start;
+}
+.career-assurance__left {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  width: 36.7708333333vw;
+}
+.career-assurance__label {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9375vw;
+  line-height: 1.5;
+  color: #720C10;
+  font-weight: 600;
+  margin: 0;
+}
+.career-assurance__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+}
+.career-assurance__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.0833333333vw;
+  max-width: 47.65625vw;
+}
+.career-assurance__text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.7;
+  color: #0C0D0D;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .career-assurance {
+    padding: 7.8125vw 0;
+  }
+  .career-assurance__container {
+    padding: 0 5.859375vw;
+    flex-direction: column;
+    gap: 3.90625vw;
+  }
+  .career-assurance__left {
+    width: 100%;
+    gap: 2.9296875vw;
+  }
+  .career-assurance__label {
+    font-size: 1.5625vw;
+  }
+  .career-assurance__title {
+    font-size: 4.6875vw;
+  }
+  .career-assurance__right {
+    max-width: 100%;
+    gap: 2.9296875vw;
+  }
+  .career-assurance__text {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .career-assurance {
+    padding: 14.4927536232vw 0;
+  }
+  .career-assurance__container {
+    padding: 0 4.8309178744vw;
+    flex-direction: column;
+    gap: 7.2463768116vw;
+  }
+  .career-assurance__left {
+    width: 100%;
+    gap: 6.038647343vw;
+  }
+  .career-assurance__label {
+    font-size: 3.3816425121vw;
+  }
+  .career-assurance__title {
+    font-size: 8.6956521739vw;
+  }
+  .career-assurance__right {
+    gap: 6.038647343vw;
+  }
+  .career-assurance__text {
+    font-size: 3.8647342995vw;
+  }
+}
+
+.job-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(35, 31, 32, 0.1);
+  padding: 1.5625vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.9895833333vw;
+  transition: all 0.3s ease-in-out;
+}
+.job-card:hover {
+  box-shadow: 0 0.2604166667vw 0.78125vw rgba(0, 0, 0, 0.1);
+}
+.job-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+}
+.job-card__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.5625vw;
+  line-height: 1.5;
+  color: #1e1e1e;
+  font-weight: 400;
+  margin: 0;
+}
+.job-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5208333333vw;
+  align-items: center;
+}
+.job-card__tag {
+  background-color: #F4EAD7;
+  padding: 0.5208333333vw 0.78125vw;
+  display: flex;
+  align-items: center;
+  gap: 0.46875vw;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+}
+.job-card__tag img {
+  width: 0.9375vw;
+  height: 0.9375vw;
+  object-fit: contain;
+}
+@media (max-width: 1024px) {
+  .job-card {
+    padding: 2.44140625vw;
+    gap: 2.9296875vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .job-card__info {
+    gap: 1.7578125vw;
+  }
+  .job-card__title {
+    font-size: 2.5390625vw;
+  }
+  .job-card__tags {
+    gap: 0.78125vw;
+  }
+  .job-card__tag {
+    padding: 0.78125vw 1.171875vw;
+    gap: 0.68359375vw;
+    font-size: 1.7578125vw;
+  }
+  .job-card__tag img {
+    width: 1.5625vw;
+    height: 1.5625vw;
+  }
+}
+@media (max-width: 768px) {
+  .job-card {
+    padding: 4.8309178744vw;
+    gap: 4.8309178744vw;
+  }
+  .job-card__info {
+    gap: 3.6231884058vw;
+  }
+  .job-card__title {
+    font-size: 5.3140096618vw;
+  }
+  .job-card__tags {
+    gap: 1.9323671498vw;
+  }
+  .job-card__tag {
+    padding: 1.9323671498vw 2.8985507246vw;
+    gap: 1.4492753623vw;
+    font-size: 3.3816425121vw;
+  }
+  .job-card__tag img {
+    width: 3.3816425121vw;
+    height: 3.3816425121vw;
   }
 }
 

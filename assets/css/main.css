@@ -3189,6 +3189,10 @@ table {
   font-weight: 400;
 }
 
+.contactbg {
+  background-image: url("../images/contact/bg_banner.png") !important;
+}
+
 .nribg {
   background-image: url("../images/nri/banner.png") !important;
 }
@@ -5987,6 +5991,733 @@ table {
 .nri-testimonials__dot.active {
   background: #720C10;
   transform: scale(1.25);
+}
+
+.contact-enquiry {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 6.25vw 0 3.125vw;
+  overflow: hidden;
+}
+.contact-enquiry__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 26.1458333333vw;
+  background-image: url("../images/contact/background-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.contact-enquiry__container {
+  position: relative;
+  z-index: 1;
+  max-width: 89.5833333333vw;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8229166667vw;
+}
+.contact-enquiry__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  margin-bottom: 1.40625vw;
+}
+.contact-enquiry__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.contact-enquiry__subtitle {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  max-width: 64.1666666667vw;
+}
+.contact-enquiry__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0833333333vw;
+  width: 100%;
+}
+.contact-enquiry__row {
+  display: flex;
+  gap: 1.9270833333vw;
+  width: 100%;
+  justify-content: center;
+}
+.contact-enquiry__row--center {
+  justify-content: center;
+}
+.contact-enquiry__card {
+  border: 2px solid #E0BD75;
+  background-color: transparent;
+  padding: 1.5625vw 2.6041666667vw;
+  height: 12.7083333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.71875vw;
+  flex: 1;
+  max-width: 28.6458333333vw;
+  position: relative;
+  overflow: hidden;
+}
+.contact-enquiry__card:last-child {
+  max-width: 28.6458333333vw;
+}
+.contact-enquiry__card-title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.875vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.contact-enquiry__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  width: 100%;
+}
+.contact-enquiry__detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9375vw;
+  width: 100%;
+}
+.contact-enquiry__detail-item--email .contact-enquiry__icon {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.contact-enquiry__icon {
+  width: 1.4583333333vw;
+  height: 1.4583333333vw;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-enquiry__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact-enquiry__text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: pre-wrap;
+  transition: color 0.3s ease-in-out;
+}
+.contact-enquiry__text:hover {
+  color: #720C10;
+}
+@media (max-width: 1024px) {
+  .contact-enquiry {
+    padding: 7.8125vw 0 3.90625vw;
+  }
+  .contact-enquiry__container {
+    padding: 0 5.859375vw;
+    gap: 2.9296875vw;
+  }
+  .contact-enquiry__header {
+    gap: 2.44140625vw;
+    margin-bottom: 1.953125vw;
+  }
+  .contact-enquiry__title {
+    font-size: 4.6875vw;
+  }
+  .contact-enquiry__subtitle {
+    font-size: 1.953125vw;
+  }
+  .contact-enquiry__content {
+    gap: 3.90625vw;
+  }
+  .contact-enquiry__row {
+    gap: 2.9296875vw;
+    flex-wrap: wrap;
+  }
+  .contact-enquiry__card {
+    padding: 2.44140625vw 3.90625vw;
+    height: auto;
+    min-height: 19.53125vw;
+    gap: 2.44140625vw;
+    max-width: calc(50% - 1.46484375vw);
+  }
+  .contact-enquiry__card-title {
+    font-size: 2.9296875vw;
+  }
+  .contact-enquiry__icon {
+    width: 2.34375vw;
+    height: 2.34375vw;
+  }
+  .contact-enquiry__detail-item--email .contact-enquiry__icon {
+    width: 1.953125vw;
+    height: 1.953125vw;
+  }
+  .contact-enquiry__text {
+    font-size: 1.7578125vw;
+  }
+}
+@media (max-width: 768px) {
+  .contact-enquiry {
+    padding: 14.4927536232vw 0 7.2463768116vw;
+  }
+  .contact-enquiry__background {
+    width: 96.6183574879vw;
+    height: 60.38647343vw;
+  }
+  .contact-enquiry__container {
+    padding: 0;
+    gap: 6.038647343vw;
+  }
+  .contact-enquiry__header {
+    gap: 4.8309178744vw;
+    margin-bottom: 4.8309178744vw;
+  }
+  .contact-enquiry__title {
+    font-size: 8.6956521739vw;
+  }
+  .contact-enquiry__subtitle {
+    font-size: 4.347826087vw;
+    max-width: 100%;
+  }
+  .contact-enquiry__content {
+    gap: 7.2463768116vw;
+  }
+  .contact-enquiry__row {
+    flex-direction: column;
+    gap: 4.8309178744vw;
+  }
+  .contact-enquiry__row--center {
+    align-items: stretch;
+  }
+  .contact-enquiry__card {
+    padding: 6.038647343vw 7.2463768116vw;
+    height: 48.309178744vw;
+    min-height: 48.309178744vw;
+    gap: 4.8309178744vw;
+    max-width: 100%;
+  }
+  .contact-enquiry__card:last-child {
+    max-width: 100%;
+  }
+  .contact-enquiry__card-title {
+    font-size: 6.7632850242vw;
+  }
+  .contact-enquiry__details {
+    gap: 3.6231884058vw;
+  }
+  .contact-enquiry__detail-item {
+    gap: 3.6231884058vw;
+  }
+  .contact-enquiry__icon {
+    width: 5.7971014493vw;
+    height: 5.7971014493vw;
+  }
+  .contact-enquiry__detail-item--email .contact-enquiry__icon {
+    width: 4.8309178744vw;
+    height: 4.8309178744vw;
+  }
+  .contact-enquiry__text {
+    font-size: 3.8647342995vw;
+  }
+}
+
+.contact-offices {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 3.125vw 0;
+  overflow: hidden;
+}
+.contact-offices__container {
+  position: relative;
+  z-index: 1;
+  max-width: 89.5833333333vw;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.5729166667vw;
+}
+.contact-offices__header {
+  text-align: center;
+  width: 100%;
+  height: 4.7916666667vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  align-items: center;
+  justify-content: center;
+}
+.contact-offices__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.contact-offices__content {
+  display: flex;
+  gap: 4.6875vw;
+  width: 100%;
+  align-items: center;
+  height: 19.7916666667vw;
+}
+.contact-offices__card {
+  display: flex;
+  gap: 2.0833333333vw;
+  height: 19.7916666667vw;
+  flex: 0 0 auto;
+  align-items: center;
+}
+.contact-offices__card:last-child {
+  gap: 2.6041666667vw;
+}
+.contact-offices__image {
+  width: 17.1875vw;
+  height: 19.7916666667vw;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.contact-offices__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.contact-offices__image--site {
+  overflow: hidden;
+  position: relative;
+}
+.contact-offices__image--site img {
+  position: absolute;
+  height: 100%;
+  width: 201.45%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: left center;
+}
+.contact-offices__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6041666667vw;
+  flex: 0 0 auto;
+  width: 21.1979166667vw;
+}
+.contact-offices__card-title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 1.875vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.contact-offices__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.78125vw;
+  width: 100%;
+}
+.contact-offices__detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9375vw;
+  width: 100%;
+}
+.contact-offices__detail-item:first-child {
+  align-items: flex-start;
+}
+.contact-offices__icon {
+  width: 1.4583333333vw;
+  height: 1.4583333333vw;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+.contact-offices__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact-offices__detail-item:first-child .contact-offices__icon {
+  margin-top: 0.1041666667vw;
+}
+.contact-offices__text-wrapper {
+  flex: 1;
+}
+.contact-offices__detail-item:first-child .contact-offices__text-wrapper {
+  width: 23.2291666667vw;
+}
+.contact-offices__detail-item:not(:first-child) .contact-offices__text-wrapper {
+  width: 21.0416666667vw;
+}
+.contact-offices__card:last-child .contact-offices__detail-item:first-child .contact-offices__text-wrapper {
+  width: 17.7604166667vw;
+}
+.contact-offices__text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: pre-wrap;
+  transition: color 0.3s ease-in-out;
+  margin: 0;
+  display: block;
+}
+.contact-offices__text:hover {
+  color: #720C10;
+}
+.contact-offices__button {
+  align-self: flex-start;
+}
+.contact-offices__card:last-child .contact-offices__info {
+  width: 21.1458333333vw;
+}
+.contact-offices__card:last-child .contact-offices__details {
+  gap: 1.3020833333vw;
+}
+@media (max-width: 1024px) {
+  .contact-offices {
+    padding: 4.8828125vw 0 5.859375vw;
+  }
+  .contact-offices__container {
+    padding: 0 5.859375vw;
+    gap: 2.9296875vw;
+  }
+  .contact-offices__title {
+    font-size: 4.6875vw;
+  }
+  .contact-offices__content {
+    flex-direction: column;
+    gap: 5.859375vw;
+  }
+  .contact-offices__card {
+    flex-direction: column;
+    height: auto;
+    gap: 2.9296875vw;
+    width: 100%;
+  }
+  .contact-offices__image {
+    width: 100%;
+    height: 29.296875vw;
+    max-width: 48.828125vw;
+  }
+  .contact-offices__info {
+    max-width: 100%;
+    gap: 3.90625vw;
+  }
+  .contact-offices__card-title {
+    font-size: 2.9296875vw;
+  }
+  .contact-offices__icon {
+    width: 2.34375vw;
+    height: 2.34375vw;
+  }
+  .contact-offices__text {
+    font-size: 1.7578125vw;
+  }
+  .contact-offices__image--site img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contact-offices {
+    padding: 9.6618357488vw 0 12.077294686vw;
+  }
+  .contact-offices__container {
+    padding: 0;
+    gap: 6.038647343vw;
+  }
+  .contact-offices__title {
+    font-size: 8.6956521739vw;
+  }
+  .contact-offices__content {
+    gap: 9.6618357488vw;
+    height: auto;
+  }
+  .contact-offices__card {
+    gap: 6.038647343vw;
+  }
+  .contact-offices__image {
+    height: 60.38647343vw;
+    max-width: 100%;
+  }
+  .contact-offices__info {
+    gap: 7.2463768116vw;
+    width: 100% !important;
+  }
+  .contact-offices__card-title {
+    font-size: 6.7632850242vw;
+  }
+  .contact-offices__details {
+    gap: 4.8309178744vw;
+  }
+  .contact-offices__detail-item {
+    gap: 3.6231884058vw;
+  }
+  .contact-offices__icon {
+    width: 5.7971014493vw;
+    height: 5.7971014493vw;
+  }
+  .contact-offices__text {
+    font-size: 3.8647342995vw;
+  }
+  .contact-offices__image--site img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.contact-form {
+  position: relative;
+  width: 100%;
+  background-color: #F4EAD7;
+  padding: 3.125vw 0 6.25vw;
+  overflow: hidden;
+}
+.contact-form__container {
+  position: relative;
+  z-index: 1;
+  max-width: 51.25vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8229166667vw;
+}
+.contact-form__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8229166667vw;
+  width: 100%;
+  height: 6.8229166667vw;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 3.0208333333vw;
+  line-height: 1.2;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.contact-form__subtitle {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  color: #0C0D0D;
+  font-weight: 400;
+  margin: 0;
+  max-width: 64.1666666667vw;
+}
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+  width: 100%;
+  max-width: 51.25vw;
+  align-items: flex-start;
+}
+.contact-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+  width: 100%;
+}
+.contact-form__field {
+  width: 100%;
+  max-width: 51.1458333333vw;
+}
+.contact-form__field--country {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 7.2916666667vw;
+}
+.contact-form__field--phone {
+  flex: 1;
+  min-width: 0;
+}
+.contact-form__field-group {
+  display: flex;
+  gap: 0.4166666667vw;
+  width: 100%;
+  max-width: 51.1458333333vw;
+  align-items: stretch;
+}
+.contact-form__input, .contact-form__textarea {
+  width: 100%;
+  padding: 1.0416666667vw;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0416666667vw;
+  line-height: 1.5;
+  color: #0C0D0D;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form__input::placeholder, .contact-form__textarea::placeholder {
+  color: rgba(12, 13, 13, 0.6);
+  opacity: 1;
+}
+.contact-form__input:focus, .contact-form__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1041666667vw #720C10;
+}
+.contact-form__input:read-only, .contact-form__textarea:read-only {
+  cursor: default;
+  background-color: #FFFFFF;
+}
+.contact-form__textarea {
+  height: 7.65625vw;
+  resize: vertical;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.contact-form__submit {
+  align-self: flex-start;
+}
+@media (max-width: 1024px) {
+  .contact-form {
+    padding: 4.8828125vw 0 7.8125vw;
+  }
+  .contact-form__container {
+    padding: 0;
+    gap: 2.9296875vw;
+  }
+  .contact-form__header {
+    gap: 2.44140625vw;
+    height: auto;
+  }
+  .contact-form__title {
+    font-size: 4.6875vw;
+  }
+  .contact-form__subtitle {
+    font-size: 1.953125vw;
+    max-width: 100%;
+  }
+  .contact-form__form {
+    gap: 2.44140625vw;
+  }
+  .contact-form__fields {
+    gap: 0.9765625vw;
+  }
+  .contact-form__field-group {
+    gap: 0.5859375vw;
+  }
+  .contact-form__field-group {
+    width: 100%;
+  }
+  .contact-form__field {
+    width: 100%;
+  }
+  .contact-form__field--country {
+    min-width: auto;
+    width: auto;
+  }
+  .contact-form__field--phone {
+    width: 100%;
+    flex: 1;
+  }
+  .contact-form__input, .contact-form__textarea {
+    padding: 1.7578125vw;
+    font-size: 1.7578125vw;
+  }
+  .contact-form__textarea {
+    height: 11.71875vw;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 9.6618357488vw 0 14.4927536232vw;
+  }
+  .contact-form__container {
+    padding: 0 4.8309178744vw;
+    gap: 6.038647343vw;
+    max-width: 100%;
+  }
+  .contact-form__header {
+    gap: 4.8309178744vw;
+    height: auto;
+  }
+  .contact-form__title {
+    font-size: 8.6956521739vw;
+  }
+  .contact-form__subtitle {
+    font-size: 4.347826087vw;
+    max-width: 100%;
+  }
+  .contact-form__form {
+    gap: 4.8309178744vw;
+    max-width: 100%;
+  }
+  .contact-form__fields {
+    gap: 2.4154589372vw;
+  }
+  .contact-form__field-group {
+    flex-direction: row;
+    gap: 1.9323671498vw;
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-form__field {
+    width: auto;
+    max-width: 100%;
+  }
+  .contact-form__field--country {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .contact-form__field--phone {
+    flex: 1 1 75%;
+    max-width: 75%;
+    min-width: 0;
+  }
+  .contact-form__input, .contact-form__textarea {
+    padding: 3.6231884058vw;
+    font-size: 3.8647342995vw;
+  }
+  .contact-form__textarea {
+    height: 24.154589372vw;
+  }
 }
 
 html {

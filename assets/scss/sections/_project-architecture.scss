@@ -18,7 +18,7 @@
   &__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 74.9%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
   }
 
@@ -158,7 +158,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: vw(2);
+    width: 0;
     height: 100%;
     background: $color-brand-primary;
     // Animation is controlled via JavaScript to restart on each tab change
@@ -230,10 +230,6 @@
 
     &__progress {
       height: vw(4);
-    }
-
-    &__progress-bar {
-      width: vw(2);
     }
   }
 

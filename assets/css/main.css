@@ -3422,6 +3422,9 @@ table {
   }
 }
 @media (max-width: 768px) {
+  .project-hero .aboutbg .project-hero__title br {
+    display: none !important;
+  }
   .project-hero {
     height: 160.6280193237vw;
     padding: 7.2463768116vw 4.8309178744vw 9.6618357488vw;
@@ -3444,6 +3447,11 @@ table {
   }
 }
 
+@media (max-width: 768px) {
+  .aboutbg .project-hero__title br {
+    display: none !important;
+  }
+}
 .project-submenu {
   position: relative;
   width: 100%;
@@ -8461,12 +8469,15 @@ table {
   }
   .about-overview__label {
     font-size: 3.3816425121vw;
+    text-align: center;
   }
   .about-overview__title {
-    font-size: 7.729468599vw;
+    font-size: 5.7971014493vw;
+    text-align: center;
   }
   .about-overview__text {
     font-size: 3.8647342995vw;
+    text-align: center;
   }
   .about-overview__text p {
     margin-bottom: 2.4154589372vw;
@@ -8701,18 +8712,23 @@ table {
     font-size: 3.3816425121vw;
   }
   .about-values__title {
-    font-size: 6.7632850242vw;
+    font-size: 5.7971014493vw;
     padding: 0 2.4154589372vw;
   }
   .about-values__intro {
     font-size: 3.3816425121vw;
     width: 100%;
   }
+  .about-values__intro p br {
+    display: none !important;
+  }
   .about-values__graphic {
-    height: 144.9275362319vw;
+    height: 94.2028985507vw;
   }
   .about-values__graphic-image {
-    width: 48.309178744vw;
+    width: 37.922705314vw;
+    height: 42.9951690821vw;
+    top: 85%;
   }
   .about-values__items {
     width: 91.7874396135vw;
@@ -8726,38 +8742,41 @@ table {
     padding: 0 3.6231884058vw;
   }
   .about-values__item--1 {
-    left: 4.8309178744vw;
-    top: 7.2463768116vw;
+    left: -1.2077294686vw;
+    top: 0;
     width: 43.4782608696vw;
   }
   .about-values__item--2 {
-    left: 2.4154589372vw;
-    top: 36.231884058vw;
+    left: -1.2077294686vw;
+    top: 18.115942029vw;
     width: 43.4782608696vw;
   }
   .about-values__item--3 {
-    left: 0;
-    top: 65.2173913043vw;
+    left: -1.2077294686vw;
+    top: 36.231884058vw;
     width: 43.4782608696vw;
   }
   .about-values__item--4 {
-    right: 2.4154589372vw;
-    top: 21.7391304348vw;
+    right: -1.2077294686vw;
+    top: 0;
     width: 43.4782608696vw;
   }
   .about-values__item--5 {
-    right: 0;
-    top: 50.7246376812vw;
+    right: -1.2077294686vw;
+    top: 18.115942029vw;
     width: 43.4782608696vw;
   }
   .about-values__item--6 {
-    right: 1.2077294686vw;
-    top: 79.7101449275vw;
+    right: -1.2077294686vw;
+    top: 36.231884058vw;
     width: 43.4782608696vw;
   }
   .about-values__footer {
     font-size: 3.3816425121vw;
     width: 100%;
+  }
+  .about-values__footer p br {
+    display: none !important;
   }
 }
 
@@ -8776,18 +8795,19 @@ table {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.8229166667vw;
+  gap: 0vw;
 }
 .about-vision-mission__mission {
-  padding-top: 10.4166666667vw;
+  padding-top: 9.21875vw;
 }
-.about-vision-mission__title-image {
-  width: auto;
-  height: 4.4791666667vw;
-}
-.about-vision-mission__title-image img {
-  height: 100%;
-  width: auto;
+.about-vision-mission__title {
+  font-family: "Chronicle Display", Georgia, serif;
+  font-size: 6.25vw;
+  font-style: normal;
+  font-weight: 325;
+  line-height: 1.2;
+  color: #E0BD75;
+  margin: 0;
 }
 .about-vision-mission__content {
   background: #FFFFFF;
@@ -8832,8 +8852,8 @@ table {
   .about-vision-mission__mission {
     padding-top: 0;
   }
-  .about-vision-mission__title-image {
-    height: 5.859375vw;
+  .about-vision-mission__title {
+    font-size: 4.1015625vw;
   }
   .about-vision-mission__content {
     padding: 2.9296875vw;
@@ -8845,7 +8865,6 @@ table {
   .about-vision-mission__image {
     width: 100%;
     height: 39.0625vw;
-    order: -1;
   }
 }
 @media (max-width: 414px) {
@@ -8856,10 +8875,10 @@ table {
     gap: 7.2463768116vw;
   }
   .about-vision-mission__vision, .about-vision-mission__mission {
-    gap: 4.8309178744vw;
+    gap: 2.4154589372vw;
   }
-  .about-vision-mission__title-image {
-    height: 12.077294686vw;
+  .about-vision-mission__title {
+    font-size: 12.077294686vw;
   }
   .about-vision-mission__content {
     padding: 4.8309178744vw;
@@ -8869,7 +8888,12 @@ table {
     font-size: 3.3816425121vw;
   }
   .about-vision-mission__image {
-    height: 72.4637681159vw;
+    height: 82.3671497585vw;
+  }
+  .about-vision-mission__image img {
+    height: 82.3671497585vw;
+    width: 45.4106280193vw;
+    margin: 0 auto;
   }
 }
 
@@ -9077,9 +9101,15 @@ table {
   }
   .about-history__content-box {
     left: 3.6231884058vw;
-    bottom: 48.309178744vw;
+    bottom: auto;
+    top: 62.3188405797vw;
     width: calc(100% - 7.2463768116vw);
     padding: 4.8309178744vw;
+    height: 78.5024154589vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
   .about-history__content {
     grid-template-columns: 1fr;
@@ -9087,9 +9117,15 @@ table {
   }
   .about-history__title {
     font-size: 6.7632850242vw;
+    position: static;
+    width: 100%;
+    text-align: center;
   }
   .about-history__description {
     font-size: 3.3816425121vw;
+    position: static;
+    width: 100%;
+    text-align: center;
   }
   .about-history__timeline-wrapper {
     left: 3.6231884058vw;
@@ -9100,6 +9136,13 @@ table {
   .about-history__timeline {
     gap: 4.8309178744vw;
     padding: 0 4.8309178744vw;
+    height: 19.3236714976vw;
+  }
+  .about-history__timeline-line {
+    top: 8.5748792271vw;
+  }
+  .about-history__timeline-progress {
+    top: 8.3333333333vw;
   }
   .about-history__timeline-item {
     min-width: 33.8164251208vw;
@@ -9114,7 +9157,7 @@ table {
   }
   .about-history__timeline-year {
     font-size: 2.8985507246vw;
-    margin-bottom: 3.6231884058vw;
+    margin-bottom: 0;
   }
   .about-history__timeline-label {
     font-size: 2.8985507246vw;
@@ -9388,10 +9431,15 @@ table {
   }
   .about-leadership__main {
     gap: 4.8309178744vw;
+    max-width: 100%;
   }
   .about-leadership__main-image {
-    height: 72.4637681159vw;
-    padding: 4.8309178744vw;
+    height: 96.6183574879vw;
+    padding: 0;
+  }
+  .about-leadership__main-image img {
+    position: relative;
+    top: 20%;
   }
   .about-leadership__main-content {
     padding: 4.8309178744vw;
@@ -9414,18 +9462,18 @@ table {
     gap: 3.6231884058vw;
   }
   .about-leadership__team-member {
-    width: 38.6473429952vw;
+    width: 42.7536231884vw;
     height: 48.309178744vw;
     padding: 3.6231884058vw;
   }
   .about-leadership__team-info {
-    gap: 1.9323671498vw;
+    gap: 0;
   }
   .about-leadership__team-name {
-    font-size: 3.8647342995vw;
+    font-size: 3.3816425121vw;
   }
   .about-leadership__team-position {
-    font-size: 2.6570048309vw;
+    font-size: 2.4154589372vw;
   }
 }
 
@@ -9439,7 +9487,7 @@ table {
   position: absolute;
   inset: 0;
   background-image: url("../images/about/director-message-bg-updated.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   pointer-events: none;
 }
@@ -9623,7 +9671,7 @@ table {
     padding: 7.2463768116vw 4.8309178744vw 14.4927536232vw;
   }
   .about-director-message__container {
-    gap: 9.6618357488vw;
+    gap: 4.8309178744vw;
   }
   .about-director-message__header {
     gap: 4.8309178744vw;
@@ -9637,7 +9685,8 @@ table {
     padding: 0 2.4154589372vw;
   }
   .about-director-message__content {
-    gap: 4.8309178744vw;
+    gap: 0vw;
+    flex-direction: column-reverse;
   }
   .about-director-message__text-wrapper {
     padding: 4.8309178744vw;
@@ -9650,16 +9699,19 @@ table {
     font-size: 3.3816425121vw;
   }
   .about-director-message__signature {
-    gap: 2.4154589372vw;
+    gap: 0;
   }
   .about-director-message__name {
     font-size: 5.7971014493vw;
   }
   .about-director-message__position {
     font-size: 3.3816425121vw;
+    width: 100%;
   }
   .about-director-message__image {
     height: 84.5410628019vw;
+    width: 81%;
+    margin: 0 auto;
   }
 }
 
@@ -9768,6 +9820,7 @@ table {
   }
   .about-projects__container {
     gap: 7.2463768116vw;
+    text-align: center;
   }
   .about-projects__header {
     gap: 4.8309178744vw;
@@ -9783,6 +9836,9 @@ table {
   }
   .about-projects__description {
     font-size: 3.3816425121vw;
+  }
+  .about-projects__button {
+    margin: 0 auto;
   }
 }
 

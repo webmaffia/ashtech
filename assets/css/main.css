@@ -7037,6 +7037,7 @@ table {
   position: relative;
   width: 100%;
   background-color: #F4EAD7;
+  padding-bottom: 5.2083333333vw;
 }
 .resources-content__tab {
   display: none;
